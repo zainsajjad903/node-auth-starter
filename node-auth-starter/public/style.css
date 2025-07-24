@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.form {
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  background: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
