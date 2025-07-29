@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <!-- 🔹 Banner Section -->
+    <div class="banner-container shrinkable" id="bannerBox" id="home">
+      <nav class="nav-bar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      <img src="ChatGPT Image Jul 17, 2025, 04_56_20 AM.png" alt="Image"/>
+      <div class="overlay-content">
+        <h1 class="animated-heading">Welcome to My Page</h1>
+        <div class="button-group">
+          <button onclick="showform('signup')">Sign Up</button>
+          <button onclick="showform('login')">Login</button>
+        </div>
+      </div>
+    </div>
+    <!-- 🔹 Form Section -->
+    <div class="form-container expand-box" id="formBox">
+      <div id="loginForm" class="form hidden">
+        <h3>Login</h3>
+        <div class="form-inner">
+          <input type="email" placeholder="Email"><br>
+          <input type="password" placeholder="New Password"><br>
+          <button>Login</button>
+        <p class="forgot-link">
+  <a href="#" onclick="showform('forgot')">Forgot Password?</a>
+</p>
+            <button onclick="goBack()" class="back-Btn">Back</button>
+        </div>
+      </div>
+      <div id="signupForm" class="form hidden">
+        <h3>Sign Up</h3>
+        <div class="form-inner">
+          <input type="text" placeholder="Name"><br>
+          <input type="email" placeholder="Email"><br>
+          <input type="password" placeholder="New Password"><br>
+          <input type="password" placeholder="Confirm Password"><br>
+          <button>Register</button>
+            <button onclick="goBack()" class="back-Btn">Back</button>
+        </div>
+      </div>
+      <div id="forgotForm" class="form hidden">
+  <h3>Reset Password</h3>
+  <div class="form-inner">
+    <input type="email" id="resetEmail" placeholder="Enter your email"><br>
+     <button onclick="sendResetCode()">Send Code</button><br><br>
+    <input type="text" id="resetCode" placeholder="Enter code (sent on email)"><br>
+    <input type="password" id="newPassword" placeholder="New Password"><br>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password"><br>
+    <button onclick="handleReset()">Reset Password</button>
+    <button onclick="goBack()" class="back-Btn">Back</button>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="next-section" id="about">
+     <div class="about-container">
+    <div class="about-image">
+      <img src="Untitled design (12).png" alt="About Us Image" />
+    </div>
+   <div class="about-text">
+    <h1>About Us</h1>
+    <p>  We are a passionate team dedicated to building user-friendly, responsive, and modern web solutions that solve real-world problems. Our journey began with a simple idea — to create digital experiences that are not only visually appealing but also deeply functional and accessible to everyone. Over the years, we have grown into a dynamic group of developers, designers, and thinkers committed to pushing boundaries in technology and creativity. We believe in continuous learning, ethical practices, and delivering value to our users with every interaction. This website is a demonstration of our design capabilities and technical vision, created as a layout prototype to test form behavior, responsiveness, and user navigation. The layout you see here is just a small glimpse of what we aim to offer in full production. Our goal is to develop tools and interfaces that are simple, intuitive, and impactful. 
+  </div>
+  </div>
+  <script src="site.js"></script>
+</body>
+</html>
