@@ -1,0 +1,18 @@
+<div class="image-container">
+  <img src="1.jpg" alt="Random nature image">
+  <div class="image-overlay">
+    <h3>Hover Effect</h3>
+    <p>Hover effect with zoom, color overlay, and text animation</p>
+  </div>
+</div>
+//ya this is HTNL code
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #fed330;
+  box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+this is the css code both for speciel hover effect on image
